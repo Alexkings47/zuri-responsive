@@ -5,21 +5,22 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: linear-gradient(hsla(0, 70%, 54%, 0.6), hsla(0, 70%, 54%, 0.6)),
+  background: linear-gradient(hsla(0, 87%, 47%, 0.55), hsla(0, 87%, 47%, 0.55)),
     url(./images/bg-intro-desktop.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   padding: 2rem 4rem;
 }
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 25rem));
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
   align-items: center;
   gap: 2rem;
   justify-content: center;
   align-content: center;
   height: 100vh;
+  max-width: 58rem;
   margin: 0 auto;
 }
 
@@ -28,7 +29,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  max-width: 25rem;
+  width: 100%;
 }
 .typo {
   display: flex;
@@ -37,7 +38,7 @@ main {
   justify-content: space-between;
   min-height: 12rem;
   color: white;
-  max-width: 25rem;
+  width: 100%;
 }
 h2 {
   font-size: 30px;
@@ -53,10 +54,10 @@ h2 {
   font-size: 14px;
   box-shadow: 0 5px 2px rgba(0, 0, 0, 0.404);
 }
-.after{
-    font-size: 10px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.842);
+.after {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.842);
 }
 .desc {
   font-size: 14px;
@@ -87,6 +88,7 @@ form > * {
   border: none;
   color: white;
   cursor: pointer;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0);
 }
 
 input {
@@ -110,9 +112,10 @@ small {
   color: hsl(246, 25%, 77%);
   font-size: 10px;
   padding-bottom: 10px;
+  text-align: center;
 }
-@media screen and (max-width: 1300px){
-.typo{
+@media screen and (max-width: 700px) {
+  .typo {
     text-align: center;
-}
+  }
 }
