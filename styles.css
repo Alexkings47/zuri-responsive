@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(hsla(0, 70%, 54%, 0.6), hsla(0, 70%, 54%, 0.6)),
+    url(./images/bg-intro-desktop.png);
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 4rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 25rem));
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.form-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 25rem;
+}
+.typo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 12rem;
+  color: white;
+  max-width: 25rem;
+}
+h2 {
+  font-size: 30px;
+}
+.intro {
+  color: white;
+  margin-bottom: 1rem;
+  background-color: hsl(248, 32%, 49%);
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.404);
+}
+.after{
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.842);
+}
+.desc {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(228, 222, 222);
+}
+form {
+  padding: 1.4rem;
+  border-radius: 4px;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.404);
+  min-height: 22rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+form > * {
+  border-radius: 3px;
+  width: 100%;
+}
+.form-btn {
+  padding: 10px 0;
+  text-align: center;
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+input {
+  text-indent: 1rem;
+  border: 1px solid hsla(246, 25%, 77%, 0.574);
+  padding: 10px 0;
+  font-weight: 500;
+  font-family: Poppins;
+}
+input:focus {
+  outline: 1px solid hsl(245, 5%, 53%);
+}
+.terms {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+}
+.terms:hover {
+  cursor: pointer;
+}
+small {
+  color: hsl(246, 25%, 77%);
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 1300px){
+.typo{
+    text-align: center;
+}
+}
